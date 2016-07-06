@@ -1,0 +1,362 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Title</title>
+  <link rel="stylesheet" href="css/foundation-emails.css" />
+</head>
+
+<body>
+  <!-- <style> -->
+  <table class="body" data-made-with-foundation>
+    <tr>
+      <td class="float-center" align="center" valign="top">
+        <!-- ===== ARDoc Details ===== -->
+
+          <!-- == Document-details table == -->
+            <table class="document-details" style="background: white; width: 100%;">
+              <tbody>
+                <tr>
+                  <td class="float-center">
+                    <table class="container">
+                      <tbody>
+                         <tr>
+                          <th class="small-12 large-6 first columns" style="padding-top: 10px; padding-bottom: 0;">
+                            <p>
+                              @@Cust_Account_CompanyName@<br>
+                              @@Cust_Account_Address1@<br> 
+                              @@Cust_Account_Address2@<br><br>
+                              @@Cust_Account_Zip@ @@Cust_Account_City@<br> 
+                              @@Cust_Account_Country@<br> 
+                              Phone: +@@Vend_Account_BillingContact_PhoneCountryCode@ @@Cust_Account_BillingContact_PhoneAreaCode@ @@Cust_Account_BillingContact_PhoneNumber@<br> 
+                              Fax: @@Cust_Account_BillingContact_FaxAreaCode@ @@Cust_Account_BillingContact_FaxNumber@<br> 
+                              VAT: @@Cust_Account_TaxRegID@
+                            </p>
+                          </th>
+                          <th class="small-12 large-6 first columns" style="padding-top: 10px; padding-bottom: 0;">
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <th class="small-12 large-6 first columns" style="padding-top: 0; padding-bottom: 0;">
+                                    <p style="margin: 0;">Document No.:</p>
+                                  </th>
+                                  <th class="small-12 large-6 first columns" style="padding-top: 0; padding-bottom: 0;">
+                                    <p style="margin: 0;">@@DocNUM@</p>
+                                  </th>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <th class="small-12 large-6 first columns" style="padding-top: 0; padding-bottom: 0;">
+                                    <p style="margin: 0;">Account ID:</p>
+                                  </th>
+                                  <th class="small-12 large-6 first columns" style="padding-top: 0; padding-bottom: 0;">
+                                    <p style="margin: 0;">@@Cust_Account_ID@</p>
+                                  </th>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <th class="small-12 large-6 first columns" style="padding-top: 0; padding-bottom: 0;">
+                                    <p style="margin: 0;">Date:</p>
+                                  </th>
+                                  <th class="small-12 large-6 first columns" style="padding-top: 0; padding-bottom: 0;">
+                                    <p style="margin: 0;">@@Date@</p>
+                                  </th>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <th class="small-12 large-6 first columns" style="padding-top: 0; padding-bottom: 0;">
+                                    <p style="margin: 0;">Due Date:</p>
+                                  </th>
+                                  <th class="small-12 large-6 first columns" style="padding-top: 0; padding-bottom: 0;">
+                                    <p style="margin: 0;">@@Due_Date@</p>
+                                  </th>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                          </th>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          <!-- == END Document-details table == -->
+
+          <!-- title -->
+            <table class="header" style="background: white; width: 100%;">
+              <tbody>
+                <tr>
+                  <td class="float-center">
+                    <table class="container">
+                      <tbody>
+                        <tr>
+                          <th class="small-12 large-12 columns">
+                            <h2>Invoice</h2>
+                          </th>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          <!-- end title -->
+      
+          <!-- == Invoice-details table == -->
+            <table class="invoice-details" style="background: \#fff; width: 100%;">
+                <tbody>
+                  <tr>
+                    <td class="float-center" align="center" >
+                      <table class="container" style="background: \#fff; border-bottom: 2px solid rgba(0,0,0,0.9);">
+                        <tbody>
+                          <tr>
+                            <th class="small-1 large-1 columns" style="padding: 0;">
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <th class="small-1 large-1 columns" style="padding-bottom: 0; ">
+                                      <h3 style="margin: 0; border-top: 1px solid black; border-bottom: 1px solid black">No.</h3>
+                                    </th>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <th class="small-1 large-1 columns" style="padding-bottom: 0;">
+                                      <p>@@Detail_LineNumber@ </p>
+                                    </th>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </th>
+                            <th class="small-4 large-4 columns" style="padding: 0;">
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <th class="small-1 large-1 columns" style="padding-bottom: 0; ">
+                                      <h3 style="margin: 0; border-top: 1px solid black; border-bottom: 1px solid black">Service Description</h3>
+                                    </th>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <th class="small-1 large-1 columns" style="padding-bottom: 0;">
+                                      <p>@@Detail_Comment@<br /><i><small>Service:&nbsp;@@Detail_SubscriptionID@&nbsp;-&nbsp;@@Detail_SubscriptionName@</small></i></p>
+                                    </th>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </th>
+                            <th class="small-1 large-1 columns" style="padding: 0;">
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <th class="small-1 large-1 columns" style="padding-bottom: 0; ">
+                                      <h3 style="margin: 0; border-top: 1px solid black; border-bottom: 1px solid black">Qty</h3>
+                                    </th>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <th class="small-1 large-1 columns" style="padding-bottom: 0;">
+                                      <p>@@Detail_Quantity@</p>
+                                    </th>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </th>
+                            <th class="small-1 large-1 columns" style="padding: 0;">
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <th class="small-1 large-1 columns" style="padding-bottom: 0; ">
+                                      <h3 style="margin: 0; border-top: 1px solid black; border-bottom: 1px solid black">UOM</h3>
+                                    </th>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <th class="small-1 large-1 columns" style="padding-bottom: 0;">
+                                      <p>@@Detail_UnitMeasure@</p>
+                                    </th>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </th>
+                            <th class="small-2 large-2 columns" style="padding: 0;">
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <th class="small-1 large-1 columns" style="padding-bottom: 0; ">
+                                      <h3 style="margin: 0; border-top: 1px solid black; border-bottom: 1px solid black">Unit Price</h3>
+                                    </th>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <th class="small-1 large-1 columns" style="padding-bottom: 0;">
+                                      <p>@@Detail_UnitPrice@ </p>
+                                    </th>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </th>
+                            <th class="small-1 large-1 columns" style="padding: 0;">
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <th class="small-1 large-1 columns" style="padding-bottom: 0; ">
+                                      <h3 style="margin: 0; border-top: 1px solid black; border-bottom: 1px solid black">Discount</h3>
+                                    </th>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <th class="small-1 large-1 columns" style="padding-bottom: 0;">
+                                      <p>@@Detail_Discount@</p>
+                                    </th>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </th>
+                            <th class="small-2 large-2 columns" style="padding: 0;">
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <th class="small-1 large-1 columns" style="padding-bottom: 0; ">
+                                      <h3 style="margin: 0; border-top: 1px solid black; border-bottom: 1px solid black">Ext Price</h3>
+                                    </th>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <th class="small-1 large-1 columns" style="padding-bottom: 0;">
+                                      <p>@@Detail_ExtendedPrice@&nbsp;</p>
+                                    </th>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+          <!-- == END Invoice-details table == -->
+
+          <!-- == tax details == -->
+              <table class="tax-details" style="background: \#fff; width: 100%;">
+                <tbody>
+                  <tr>
+                    <td class="float-center" align="center" >
+                      <table class="container" style="">
+                        <tbody>
+                          <tr>
+                            <th class="small-9 large-9 columns" style=" padding: 0;">
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <th class="text-right">
+                                      <p class="gray-text" style="margin: 0; text-align: right;">Total without taxes:</p>
+                                    </th>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <th class="text-right">
+                                      <p class="gray-text" style="margin: 0; text-align: right;">Total taxes (rate 15%):</p>
+                                    </th>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <th class="text-right" style="">
+                                      <h3 style="margin: 0; text-align: right;">Total:</h3>
+                                    </th>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </th>
+                            <th class="small-3 large-3 columns">
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <th class="text-right">
+                                      <p class="gray-text" style="margin: 0; text-align: right;">@@Cust_Account_Currency_Abbreviation@ @@MerchTotal@&nbsp;</p>
+                                    </th>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <th class="text-right">
+                                      <p class="gray-text" style="margin: 0; text-align: right;">@@Cust_Account_Currency_Abbreviation@ @@TaxDetail_Tax_Amount@&nbsp;</p>
+                                    </th>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <th class="text-right">
+                                      <h3 style="margin: 0; text-align: right;">@@Cust_Account_Currency_Abbreviation@ @@Total@&nbsp;</h3>
+                                    </th>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            <!-- == END tax details == -->
+
+
+        <!-- ===== END ARDoc Details ===== -->
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<table class="TableBorder" id="TableDocSummary" cellspacing="0" cellpadding="2" width="650"> 
+  <tr class="TableBackground PageTitleTextWhite"> 
+    <td colspan="3"> 
+    Document Details 
+    </td> 
+  </tr> 
+  <tr class="pageText"> 
+    <td valign="top" width="58%"> 
+      @@Cust_Account_CompanyName@<br />
+      @@Cust_Account_Address1@<br /> 
+      @@Cust_Account_Address2@<br /> 
+      @@Cust_Account_Zip@ @@Cust_Account_City@<br /> 
+      @@Cust_Account_Country@</br> 
+      Phone: +@@Vend_Account_BillingContact_PhoneCountryCode@ @@Cust_Account_BillingContact_PhoneAreaCode@ @@Cust_Account_BillingContact_PhoneNumber@<br /> 
+      Fax: @@Cust_Account_BillingContact_FaxAreaCode@ @@Cust_Account_BillingContact_FaxNumber@<br /> 
+      VAT: @@Cust_Account_TaxRegID@<br /> 
+    </td> 
+    <td valign="top" align="right" width="24%">
+      <font class="pageTitleText">Document No.:</font><br />
+      <font class="pageTitleText">Account ID:</font><br />
+      Date:<br />
+      Due Date:<br />
+    </td>
+    <td valign="top" align="right" width="18%">
+      <font class="pageTitleText">@@DocNUM@&nbsp;</font><br />
+       <font class="pageTitleText">@@Cust_Account_ID@&nbsp;</font><br />
+      @@Date@&nbsp;<br />
+      @@Due_Date@&nbsp;<br />
+    </td>
+  </tr> 
+</table> 
+</td> 
+</tr> 
+<tr> 
+<td> 
+<table class="TableBorder" id="TableDocDetails" cellspacing="0" cellpadding="2" width="650"> 
+  <tr class="TableBackground PageTitleTextWhite"> 
+    <td valign="top" align="left" width="6%"> 
+      No.</td> 
+    <td valign="top" align="left" width="34%"> 
+      Service Description</td> 
+    <td valign="top" align="center" width="6%"> 
+      Qty</td> 
+    <td valign="top" align="center" width="12%"> 
+      UOM</td> 
+    <td valign="top" align="center" width="12%"> 
+      Unit Price</td> 
+    <td valign="top" align="center" width="12%"> 
+      Discount</td>
+    <td valign="top" align="center" width="18%"> 
+      Ext Price</td> 
+  </tr> 
+  ##DetailList# 
+  <tr class="PageText"> 
+    <td class="TableRightBorder" valign="top" align="left" width="6%"> 
+      @@Detail_LineNumber@ 
+    </td> 
+    <td class="TableRightBorder" valign="top" align="left" width="34%"> 
+      @@Detail_Comment@<br /><i><small>Service:&nbsp;@@Detail_SubscriptionID@&nbsp;-&nbsp;@@Detail_SubscriptionName@</small></i>
+    </td> 
+    <td class="TableRightBorder" valign="top" align="center" width="6%"> 
+      @@Detail_Quantity@ 
+    </td> 
+    <td class="TableRightBorder" valign="top" align="center" width="12%"> 
+      @@Detail_UnitMeasure@ 
+    </td> 
+    <td class="TableRightBorder" valign="top" align="right" width="12%"> 
+      @@Detail_UnitPrice@ 
+    </td>
+    <td class="TableRightBorder" valign="top" align="center" width="12%"> 
+      @@Detail_Discount@ 
+    </td> 
+    <td valign="top" align="right" width="18%"> 
+      @@Detail_ExtendedPrice@&nbsp;
+    </td>
+  </tr> 
+  ##/DetailList# 
+</table> 
+</td> 
+</tr> 
+<tr> 
+<td> 
+<table id="TableTaxAndTotal" cellspacing="0" cellpadding="2" border="0" width="650">
+  <tr class="PageText"> 
+    <td valign="top" align="right" style="width: 82%;"> 
+      Total without taxes:</td> 
+    <td valign="top" align="right" style="width: 18%;"> 
+      @@Cust_Account_Currency_Abbreviation@ @@MerchTotal@&nbsp;</td> 
+  </tr> 
+  ##Tax_Details_List#
+  <tr class="PageText"> 
+    <td valign="top" align="right" style="width: 82%;"> 
+      Total taxes (rate @@TaxDetail_Tax_Rate@):</td> 
+    <td valign="top" align="right" style="width: 18%;"> 
+      @@Cust_Account_Currency_Abbreviation@ @@TaxDetail_Tax_Amount@&nbsp;</td> 
+  </tr>
+  ##/Tax_Details_List# 
+  <tr class="PageTextBold"> 
+    <td valign="top" align="right" style="width: 82%;"> 
+      Total:</td> 
+    <td valign="top" align="right" style="width: 18%;"> 
+      @@Cust_Account_Currency_Abbreviation@ @@Total@&nbsp;</td> 
+  </tr> 
+</table>
